@@ -9,7 +9,7 @@ const userRegister = async (req, res, next) => {
     res.status(201).json(result);
 
     await transporter.sendMail({
-      from: "<jorge.salas.sheron@gmail.com>",
+      from: "<brillitt79@gmail.com>",
       to: result.email,
       subject: "Welcome",
       text: `Hi ${result.username} enjoy your shopping`,
